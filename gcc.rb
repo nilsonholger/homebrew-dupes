@@ -86,7 +86,8 @@ class Gcc < Formula
       "--with-system-zlib",
       "--enable-stage1-checking",
       "--enable-plugin",
-      "--enable-lto"
+      "--enable-lto",
+      "--enable-libstdcxx-time"
     ]
 
     args << '--disable-nls' unless build.include? 'enable-nls'
